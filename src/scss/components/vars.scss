@@ -1,3 +1,22 @@
 $imgFolder: '../img/'; // путь к изображениям
 $fontsFolder: '../fonts/'; // путь к шрифтам
 
+//colors
+$white: #fff;
+$black: #000;
+$gray: #616161;
+$gray-dark: #313131;
+$orange: #fc5f45;
+$turquoise: #38c695;
+$purple: #b27cf5;
+$purple--dark: #3f4049;
+$yellow: #feb960;
+$color-text: $gray;
+$bg-body: $white;
+
+// fonts
+$font-family-base: 'Poppins', 'Arial', sans-serif;
+$font--family-logo: 'Wisdom Script', 'Comic Sans', cursive;
+$font-family-1: 'Libre Baskerville', 'Georgia', serif;
+$font-family-2: 'Sacramento', 'Comic Sans', cursive;
+$font-size: 15px;
