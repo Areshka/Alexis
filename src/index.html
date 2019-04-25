@@ -10,44 +10,90 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <span class="logo  logo--header">Alexis</span>
-    <nav class="main-nav  main-nav--close">
-      <button class="main-nav__toggle">Open Menu</button>
+  <nav class="main-nav  main-nav--close">
+    <div class="main-nav__wrapper">
+      <button class="main-nav__toggle  visually-hidden">Open Menu</button>
+      <a class="logo  logo--header" href="#home">Alexis</a>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="#about" class="main-nav__link">About Us</a>
+          <a href="#about" class="main-nav__link  main-nav__link--active">About Us</a>
         </li>
+        <!-- /.main-nav__item -->
         <li class="main-nav__item">
           <a href="#focus" class="main-nav__link">Our Focus</a>
         </li>
+        <!-- /.main-nav__item -->
         <li class="main-nav__item">
           <a href="#portfolio" class="main-nav__link">Portfolio</a>
         </li>
+        <!-- /.main-nav__item -->
         <li class="main-nav__item">
           <a href="#team" class="main-nav__link">Our Team</a>
         </li>
+        <!-- /.main-nav__item -->
         <li class="main-nav__item">
           <a href="#work-steps" class="main-nav__link">Work Steps</a>
         </li>
+        <!-- /.main-nav__item -->
         <li class="main-nav__item">
           <a href="#pricing" class="main-nav__link">Pricing</a>
         </li>
+        <!-- /.main-nav__item -->
         <li class="main-nav__item">
           <a href="#testimonials" class="main-nav__link">Testimonials</a>
         </li>
+        <!-- /.main-nav__item -->
         <li class="main-nav__item">
           <a href="#blog" class="main-nav__link">Blog</a>
         </li>
+        <!-- /.main-nav__item -->
         <li class="main-nav__item">
           <a href="#contact" class="main-nav__link">Contact</a>
         </li>
+        <!-- /.main-nav__item -->
       </ul>
-    </nav>
+      <!-- /.main-nav__list -->
+    </div>
+    <!-- /.main-nav__wrapper -->
+  </nav>
+  <!-- /.main-nav -->
 
+  <header class="main-header">
+    <div class="promo">
+      <h2 class="promo__slogan">We design things with love<br> and passion.</h2>
+      <a class="promo__button  button" href="#works">Our works</a>
+      <ul class="promo__list">
+        <li class="promo__item  promo__item--turquoise">
+          <svg class="icon  promo__icon  promo__icon--dollar" width="40" height="40">
+            <use xlink:href="#icon-dollar"></use>
+          </svg>
+          <p>fixed price project</p>
+        </li>
+        <li class="promo__item  promo__item--purple">
+          <svg class="icon  promo__icon  promo__icon--clock" width="40" height="40">
+            <use xlink:href="#icon-clock"></use>
+          </svg>
+          <p>receive on time</p>
+        </li>
+        <li class="promo__item  promo__item--yellow">
+          <svg class="icon promo__icon  promo__icon--check" width="40" height="40">
+            <use xlink:href="#icon-check"></use>
+          </svg>
+          <p>satisfaction guranteed</p>
+        </li>
+      </ul>
+      <!-- /.promo__list -->
+    </div>
+    <!-- /.promo -->
   </header>
+  <!-- /.main-header -->
 
+  <!-- Include svg sprite -->
+  <div style="display:none">
+    <include src="build/img/vector/sprite.svg"></include>
+  </div>
 
+  <!-- Scripts -->
   <script src="js/main.min.js"></script>
 </body>
 
