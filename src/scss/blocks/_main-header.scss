@@ -1,0 +1,13 @@
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba($black, .75), rgba($black, .8)),
+              $bg-purple url($folder-raster + "bg-header.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+
