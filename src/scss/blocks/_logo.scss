@@ -1,0 +1,19 @@
+.logo {
+  font-family: $font--family-logo;
+  line-height: 35px;
+  color: $color-text;
+  text-decoration: none;
+
+  &::first-letter {
+    color: $orange;
+  }
+
+  &--header {
+    margin-top: -10px;
+    font-size: 35px;
+  }
+
+  &--footer {
+    font-size: 50px;
+  }
+}
