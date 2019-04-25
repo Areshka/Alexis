@@ -1,18 +1,22 @@
-$imgFolder: '../img/'; // путь к изображениям
-$fontsFolder: '../fonts/'; // путь к шрифтам
+$folder-img: '../img/'; // путь к изображениям
+$folder-raster: '../img/raster/'; // путь к растровым изображениям
+$folder-vector: '../img/vector/'; // путь к векторным изображениям
+$folder-fonts: '../fonts/'; // путь к шрифтам
 
 //colors
 $white: #fff;
 $black: #000;
 $gray: #616161;
-$gray-dark: #313131;
+$gray--dark: #313131;
 $orange: #fc5f45;
 $turquoise: #38c695;
 $purple: #b27cf5;
 $purple--dark: #3f4049;
 $yellow: #feb960;
 $color-text: $gray;
-$bg-body: $white;
+$color-nav: #272727;
+$bg-white: $white;
+$bg-purple: $purple--dark;
 
 // fonts
 $font-family-base: 'Poppins', 'Arial', sans-serif;
