@@ -1,0 +1,65 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5%;
+
+  &__slogan {
+    margin-bottom: 60px;
+    font-family: $font-family-1;
+    font-size: 60px;
+    line-height: 85px;
+    color: $white;
+    text-align: center;
+  }
+
+  &__button {
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 82px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__item {
+    width: 250px;
+    font: 500 18px/18px $font-family-base;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+
+    &--turquoise {
+      color: $turquoise;
+    }
+
+    &--purple {
+      color: $purple;
+    }
+
+    &--yellow {
+      color: $yellow;
+    }
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 35px;
+
+    &--dollar {
+      fill: $turquoise;
+    }
+
+    &--clock {
+      fill: $purple;
+    }
+
+    &--check {
+      fill: $yellow;
+    }
+  }
+}
