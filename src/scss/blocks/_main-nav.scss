@@ -14,6 +14,10 @@
     padding: 25px 15px 25px;
   }
 
+  &__toggle {
+    display: none;
+  }
+
   &__list {
     display: flex;
   }
@@ -60,14 +64,95 @@
 
 @media (max-width: 960px) {
   .main-nav__wrapper {
+    position: relative;
     flex-direction: column;
     max-width: 100%;
     padding: 25px 0 0;
   }
 
+  .main-nav__toggle {
+    position: absolute;
+    top: 22px;
+    right: 15px;
+    display: inline-block;
+    width: 40px;
+    height: 32px;
+    padding: 0;
+    font-size: 0;
+    background: transparent;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    transition: opacity .3s;
+
+
+    &:hover {
+      opacity: .7;
+    }
+
+    &:active {
+      opacity: .5;
+    }
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 24px;
+      height: 2px;
+      margin-top: -1px;
+      margin-left: -12px;
+      background-color: $gray;
+      transition: opacity .3s;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 24px;
+        height: 2px;
+        background-color: $gray;
+        transition: opacity .3s;
+      }
+
+      &::before {
+        top: -6px;
+      }
+
+      &::after {
+        top: 6px;
+      }
+    }
+  }
+
+  .main-nav--open {
+    .main-nav__toggle span {
+      height: 0;
+    }
+
+    .main-nav__toggle span::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    .main-nav__toggle span::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+
   .main-nav__list {
-    display: block;
-    width: 100%;
+    display: none;
+    transition: all .5s;
+  }
+
+  .main-nav--open {
+    .main-nav__list {
+      display: block;
+      width: 100%;
+      transform: translateY(0);
+    }
   }
 
   .main-nav__item {

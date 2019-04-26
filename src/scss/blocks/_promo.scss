@@ -63,3 +63,45 @@
     }
   }
 }
+
+
+
+@media (max-width: 960px) {
+  .promo {
+
+    &__slogan {
+      margin-bottom: 40px;
+      font-size: 50px;
+      line-height: 65px;
+    }
+
+    &__item {
+      width: 230px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .promo {
+
+    &__slogan {
+      margin-bottom: 40px;
+      font-size: 35px;
+      line-height: 55px;
+    }
+
+    &__item {
+      width: 200px;
+      font-size: 14px;
+    }
+
+    &__list {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      margin-bottom: 30px;
+    }
+  }
+}

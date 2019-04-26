@@ -17,6 +17,8 @@ $color-text: $gray;
 $color-nav: #272727;
 $bg-white: $white;
 $bg-purple: $purple--dark;
+$border-color: #e2e2e2;
+$border-color-hover: darken($border-color, 10);
 
 // fonts
 $font-family-base: 'Poppins', 'Arial', sans-serif;

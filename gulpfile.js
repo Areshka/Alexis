@@ -81,7 +81,8 @@ function styles() {
 }
 
 const jsFiles = [
-  path.scripts.src + 'main.js'
+  path.scripts.src + 'main.js',
+  path.scripts.src + 'menu.js'
 ];
 
 // сборка скриптов
