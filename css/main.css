@@ -540,6 +540,8 @@ picture img {
     max-width: 1140px;
     margin: 0 auto;
     padding: 25px 15px 25px; }
+  .main-nav__toggle {
+    display: none; }
   .main-nav__list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -577,13 +579,71 @@ picture img {
 
 @media (max-width: 960px) {
   .main-nav__wrapper {
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     flex-direction: column;
     max-width: 100%;
     padding: 25px 0 0; }
+  .main-nav__toggle {
+    position: absolute;
+    top: 22px;
+    right: 15px;
+    display: inline-block;
+    width: 40px;
+    height: 32px;
+    padding: 0;
+    font-size: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s; }
+    .main-nav__toggle:hover {
+      opacity: .7; }
+    .main-nav__toggle:active {
+      opacity: .5; }
+    .main-nav__toggle span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 24px;
+      height: 2px;
+      margin-top: -1px;
+      margin-left: -12px;
+      background-color: #616161;
+      -webkit-transition: opacity .3s;
+      transition: opacity .3s; }
+      .main-nav__toggle span::before, .main-nav__toggle span::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 24px;
+        height: 2px;
+        background-color: #616161;
+        -webkit-transition: opacity .3s;
+        transition: opacity .3s; }
+      .main-nav__toggle span::before {
+        top: -6px; }
+      .main-nav__toggle span::after {
+        top: 6px; }
+  .main-nav--open .main-nav__toggle span {
+    height: 0; }
+  .main-nav--open .main-nav__toggle span::before {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .main-nav--open .main-nav__toggle span::after {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
   .main-nav__list {
+    display: none; }
+  .main-nav--open .main-nav__list {
     display: block;
     width: 100%; }
   .main-nav__item {
@@ -620,7 +680,7 @@ picture img {
 
 @media (max-width: 960px) {
   .logo {
-    margin-bottom: 20px; } }
+    margin-bottom: 25px; } }
 
 .promo {
   display: -webkit-box;
