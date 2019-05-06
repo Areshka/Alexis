@@ -113,7 +113,7 @@
         width: 24px;
         height: 2px;
         background-color: $gray;
-        transition: opacity .3s;
+        transition: all .3s;
       }
 
       &::before {
@@ -131,6 +131,11 @@
       height: 0;
     }
 
+    .main-nav__toggle span::before,
+    .main-nav__toggle span::after {
+      transition: transform .5s;
+    }
+
     .main-nav__toggle span::before {
       top: 0;
       transform: rotate(45deg);
@@ -143,15 +148,16 @@
   }
 
   .main-nav__list {
-    display: none;
-    transition: all .5s;
+    display: block;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s;
   }
 
   .main-nav--open {
     .main-nav__list {
-      display: block;
-      width: 100%;
-      transform: translateY(0);
+      max-height: 450px;
     }
   }
 

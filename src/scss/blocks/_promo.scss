@@ -86,9 +86,13 @@
   .promo {
 
     &__slogan {
-      margin-bottom: 40px;
-      font-size: 35px;
-      line-height: 55px;
+      margin-bottom: 60px;
+      font-size: 40px;
+      line-height: 65px;
+    }
+
+    &__button {
+      margin-bottom: 70px;
     }
 
     &__item {
@@ -100,8 +104,42 @@
       flex-wrap: wrap;
     }
 
-    &__item {
+    &__icon {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .promo {
+
+    &__slogan {
+      margin-bottom: 25px;
+      font-size: 22px;
+      line-height: 35px;
+    }
+
+    &__button {
       margin-bottom: 30px;
     }
+
+    &__item {
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__icon {
+      width: 30px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media (max-height: 480px) {
+  .promo__icon {
+    display: none;
   }
 }
