@@ -27,7 +27,8 @@ var path = {
   fonts: {
     src: 'src/fonts/**/*.*',
     build: 'build/fonts/'
-  }
+  },
+  video: 'src/video/**/*.*'
 };
 
 const gulp = require('gulp'); // подключение gulp
@@ -162,7 +163,8 @@ function watch() {
 
 function copy() {
   return gulp.src([
-      path.fonts.src
+      path.fonts.src,
+      path.video
     ], {
       base: "src"
     })
