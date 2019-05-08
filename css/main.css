@@ -1023,80 +1023,11 @@ picture img {
 
 .video {
   background-color: #3f4049; }
-  .video__wrapper {
-    position: relative;
-    max-height: 500px; }
-    .video__wrapper:hover .video__control {
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1); }
   .video__bg {
-    height: 500px;
+    height: 650px;
     width: 100%;
     outline: none; }
-  .video__control {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 80px;
-    height: 80px;
-    margin-top: -40px;
-    margin-left: -40px;
-    background-color: transparent;
-    border: 2px solid #38c695;
-    border-radius: 50%;
-    outline: none;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition-duration: .3s;
-    transition-duration: .3s; }
-    .video__control--play .bar {
-      position: absolute;
-      top: 25px;
-      left: 32px;
-      width: 2px;
-      height: 30px;
-      background-color: #38c695;
-      border-radius: 3px; }
-      .video__control--play .bar::before, .video__control--play .bar::after {
-        content: "";
-        position: absolute;
-        width: 2px;
-        height: 24px;
-        background-color: #38c695;
-        border-radius: 3px; }
-      .video__control--play .bar::before {
-        top: -4px;
-        left: 9px;
-        -webkit-transform: rotate(-51deg);
-        -ms-transform: rotate(-51deg);
-        transform: rotate(-51deg); }
-      .video__control--play .bar::after {
-        bottom: -4px;
-        left: 9px;
-        -webkit-transform: rotate(51deg);
-        -ms-transform: rotate(51deg);
-        transform: rotate(51deg); }
-    .video__control--pause .bar {
-      position: absolute;
-      top: 24px;
-      left: 27px;
-      width: 5px;
-      height: 30px;
-      background-color: transparent;
-      border: 2px solid #38c695;
-      border-radius: 3px; }
-      .video__control--pause .bar::after {
-        content: "";
-        position: absolute;
-        width: 5px;
-        height: 30px;
-        background-color: transparent;
-        border: 2px solid #38c695;
-        border-radius: 3px; }
-      .video__control--pause .bar::after {
-        top: -2px;
-        left: 15px; }
-    .video__control:hover {
-      cursor: pointer; }
+
+@media (max-width: 960px) {
+  .video__bg {
+    height: auto; } }
