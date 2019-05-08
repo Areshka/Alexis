@@ -1,0 +1,16 @@
+.video {
+  background-color: $purple--dark;
+
+  &__bg {
+    height: 650px;
+    width: 100%;
+    outline: none;
+  }
+}
+
+@media (max-width: 960px) {
+
+  .video__bg {
+    height: auto;
+  }
+}
