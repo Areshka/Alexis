@@ -807,17 +807,21 @@ picture img {
   .promo__icon {
     display: none; } }
 
-.title {
-  font: bold 50px/1.6 "Libre Baskerville", "Georgia", serif;
-  color: #313131;
+.section-header {
   text-align: center; }
+  .section-header__title {
+    margin-bottom: 15px;
+    font: bold 50px/1.6 "Libre Baskerville", "Georgia", serif;
+    color: #313131; }
+  .section-header__subtitle {
+    font: normal 18px/1 "Poppins", "Arial", sans-serif; }
 
 @media (max-width: 960px) {
-  .title {
+  .section-header__title {
     font-size: 40px; } }
 
 @media (max-width: 768px) {
-  .title {
+  .section-header__title {
     font-size: 35px; } }
 
 .about__wrapper {
@@ -848,6 +852,15 @@ picture img {
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   box-sizing: border-box; }
+  .about__content::before {
+    content: "01";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    z-index: 0;
+    font-size: 276px;
+    color: rgba(224, 224, 224, 0.5);
+    font-weight: 700; }
   .about__content::after {
     content: "";
     position: absolute;
@@ -860,10 +873,14 @@ picture img {
     background: linear-gradient(to right, #fc5f45 25%, #38c695 25%, #38c695 50%, #b27cf5 50%, #b27cf5 75%, #feb960 75%, #feb960 100%); }
 
 .about__title {
+  position: relative;
   margin-bottom: 20px;
-  text-align: left; }
+  font: bold 50px/1.6 "Libre Baskerville", "Georgia", serif;
+  text-align: left;
+  color: #313131; }
 
 .about__text {
+  position: relative;
   margin-bottom: 27px;
   font: normal 15px/1.8 "Poppins", "Arial", sans-serif; }
   .about__text:last-child {
@@ -879,7 +896,8 @@ picture img {
     width: 60%;
     padding: 60px 60px 70px; }
   .about__title {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    font-size: 40px; }
   .about__text {
     margin-bottom: 20px;
     font-size: 14px;
@@ -889,6 +907,8 @@ picture img {
   .about__wrapper {
     padding-top: 70px;
     padding-bottom: 70px; }
+  .about__title {
+    font-size: 35px; }
   .about__img {
     display: none; }
   .about__content {
@@ -932,12 +952,8 @@ picture img {
     position: relative;
     padding-top: 135px;
     padding-bottom: 150px; }
-  .services__title {
-    margin-bottom: 15px; }
-  .services__subtitle {
-    margin-bottom: 80px;
-    font: normal 18px/1 "Poppins", "Arial", sans-serif;
-    text-align: center; }
+  .services__header {
+    margin-bottom: 80px; }
   .services__list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1012,7 +1028,7 @@ picture img {
   .services__wrapper {
     padding-top: 70px;
     padding-bottom: 70px; }
-  .services__subtitle {
+  .services__header {
     margin-bottom: 50px; }
   .services__item {
     padding: 40px 25px 40px; } }
@@ -1070,12 +1086,8 @@ picture img {
     position: relative;
     padding-top: 135px;
     padding-bottom: 125px; }
-  .portfolio__title {
-    margin-bottom: 15px; }
-  .portfolio__subtitle {
-    margin-bottom: 80px;
-    font: normal 18px/1 "Poppins", "Arial", sans-serif;
-    text-align: center; }
+  .portfolio__header {
+    margin-bottom: 80px; }
   .portfolio__list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1138,7 +1150,7 @@ picture img {
   .portfolio__wrapper {
     padding-top: 70px;
     padding-bottom: 70px; }
-  .portfolio__subtitle {
+  .portfolio__header {
     margin-bottom: 50px; } }
 
 @media (max-width: 576px) {
