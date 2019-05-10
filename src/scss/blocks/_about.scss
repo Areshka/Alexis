@@ -26,6 +26,17 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 
+    &::before {
+      content: "01";
+      position: absolute;
+      top: -25px;
+      left: 0;
+      z-index: 0;
+      font-size: 276px;
+      color: rgba(#e0e0e0, .5);
+      font-weight: 700;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -38,11 +49,15 @@
   }
 
   &__title {
+    position: relative;
     margin-bottom: 20px;
+    font: bold 50px/1.6 $font-family-1;
     text-align: left;
+    color: $color-title;
   }
 
   &__text {
+    position: relative;
     margin-bottom: 27px;
     font: normal 15px/1.8 $font-family-base;
 
@@ -70,6 +85,7 @@
 
     &__title {
       margin-bottom: 15px;
+      font-size: 40px;
     }
 
     &__text {
@@ -85,6 +101,10 @@
     &__wrapper {
       padding-top: 70px;
       padding-bottom: 70px;
+    }
+
+    &__title {
+      font-size: 35px
     }
 
     &__img {
