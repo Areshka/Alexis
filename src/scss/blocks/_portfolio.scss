@@ -10,14 +10,8 @@
     padding-bottom: 125px;
   }
 
-  &__title {
-    margin-bottom: 15px;
-  }
-
-  &__subtitle {
+  &__header {
     margin-bottom: 80px;
-    font: normal 18px/1 $font-family-base;
-    text-align: center;
   }
 
   &__list {
@@ -85,7 +79,6 @@
   }
 }
 
-
 @media (max-width: 768px) {
 
   .portfolio__wrapper {
@@ -93,7 +86,7 @@
     padding-bottom: 70px;
   }
 
-  .portfolio__subtitle {
+  .portfolio__header {
     margin-bottom: 50px;
   }
 }

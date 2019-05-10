@@ -1,0 +1,31 @@
+.section-header {
+  text-align: center;
+
+  &__title {
+    margin-bottom: 15px;
+    font: bold 50px/1.6 $font-family-1;
+    color: $color-title;
+  }
+
+  &__subtitle {
+    font: normal 18px/1 $font-family-base;
+  }
+}
+
+@media (max-width: 960px) {
+
+  .section-header {
+    &__title {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .section-header {
+    &__title {
+      font-size: 35px;
+    }
+  }
+}

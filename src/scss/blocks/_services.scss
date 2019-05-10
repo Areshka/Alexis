@@ -9,14 +9,8 @@
     padding-bottom: 150px;
   }
 
-  &__title {
-    margin-bottom: 15px;
-  }
-
-  &__subtitle {
+  &__header {
     margin-bottom: 80px;
-    font: normal 18px/1 $font-family-base;
-    text-align: center;
   }
 
   &__list {
@@ -118,7 +112,7 @@
     padding-bottom: 70px;
   }
 
-  .services__subtitle {
+  .services__header {
     margin-bottom: 50px;
   }
 
