@@ -40,8 +40,7 @@
 
   &__title {
     margin-bottom: 20px;
-    font: bold 50px/1.6 $font-family-1;
-    color: $color-title;
+    text-align: left;
   }
 
   &__text {
@@ -72,7 +71,6 @@
 
     &__title {
       margin-bottom: 15px;
-      font-size: 40px;
     }
 
     &__text {
@@ -98,10 +96,6 @@
       width: 100%;
       padding: 50px 50px 60px;
     }
-
-    &__title {
-      font-size: 35px;
-    }
   }
 }
 
@@ -114,10 +108,6 @@
 
     &__content {
       padding: 20px 20px 30px;
-    }
-
-    &__title {
-      font-size: 30px;
     }
   }
 }
