@@ -10,9 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 25px 15px 25px;
+    padding: 25px 15px;
   }
 
   &__toggle {
@@ -67,8 +65,7 @@
   .main-nav__wrapper {
     position: relative;
     flex-direction: column;
-    max-width: 100%;
-    padding: 25px 0 0;
+    padding-bottom: 0;
   }
 
   .main-nav__toggle {
