@@ -11,3 +11,39 @@
     font-weight: $weight;
   }
 }
+
+@mixin section-number($num) {
+  &::before {
+    content: $num;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    z-index: 0;
+    margin-left: -170px;
+    font-size: 276px;
+    color: rgba(#e0e0e0, .5);
+    font-weight: 700;
+  }
+
+  @media (max-width: 960px) {
+    &::before {
+      margin-left: -160px;
+      font-size: 250px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &::before {
+      top: -15px;
+      margin-left: -110px;
+      font-size: 180px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    &::before {
+      margin-left: -90px;
+      font-size: 150px;
+    }
+  }
+}
