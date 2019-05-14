@@ -14,9 +14,10 @@
   }
 
   &__button {
-    width: auto;
+    width: 180px;
     margin: 0 auto;
     margin-bottom: 82px;
+    box-sizing: border-box;
   }
 
   &__list {
