@@ -7,6 +7,7 @@
   height: 100vh;
   background: linear-gradient(rgba($black, .75), rgba($black, .8)),
               $bg-purple url($folder-raster + "bg-header.jpg") no-repeat center center;
+  background-attachment: fixed;
   background-size: cover;
 }
 
