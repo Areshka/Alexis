@@ -1,0 +1,136 @@
+.stats {
+  background: linear-gradient(to top, rgba(#262732, .85), rgba(#262732, .85)),
+              $bg-purple url($folder-raster + "bg-statistics.jpg") no-repeat top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.stats__wrapper {
+  padding-top: 145px;
+  padding-bottom: 125px;
+}
+
+.stats__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats__item {
+  position: relative;
+  max-width: 262px;
+  width: 22.98%;
+  padding-bottom: 55px;
+  font: 400 15px/1em $font-family-base;
+  text-align: center;
+  color: #fefefe;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 15px;
+    height: 15px;
+    margin-left: -8px;
+    background-color: $orange;
+    border-radius: 50%
+  }
+
+  &--orange::after {
+    background: radial-gradient($orange 0, $orange 3px, transparent 4px, transparent 5px, $orange 7px, $orange 100%);
+  }
+
+  &--turquoise::after {
+    background: radial-gradient($turquoise 0, $turquoise 3px, transparent 4px, transparent 5px, $turquoise 7px, $turquoise 100%);
+  }
+
+  &--purple::after {
+    background: radial-gradient($purple 0, $purple 3px, transparent 4px, transparent 5px, $purple 7px, $purple 100%);
+  }
+
+  &--yellow::after {
+    background: radial-gradient($yellow 0, $yellow 3px, transparent 4px, transparent 5px, $yellow 7px, $yellow 100%);
+  }
+}
+
+.stats__wrapper-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 51px;
+  margin-bottom: 28px;
+}
+
+.stats__icon {
+  fill: $white;
+
+  &--orange {
+    width: 51px;
+    height: 48px;
+    fill: $orange;
+  }
+
+  &--turquoise {
+    width: 47px;
+    height: 51px;
+    fill: $turquoise;
+  }
+
+  &--purple {
+    width: 51px;
+    height: 44px;
+    fill: $purple;
+  }
+
+  &--yellow {
+    width: 51px;
+    height: 46px;
+    fill: $yellow;
+  }
+}
+
+.stats__number {
+  margin-bottom: 28px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+
+  .stats__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .stats__list {
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+
+  .stats__item {
+    max-width: 47%;
+    width: 47%;
+    margin-bottom: 50px;
+    padding-bottom: 45px;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 365px) {
+
+  .stats__item {
+    max-width: 100%;
+    width: 100%;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 50px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
