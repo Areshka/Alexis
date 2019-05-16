@@ -23,4 +23,32 @@
   &:active {
     transform: scale(.9);
   }
+
+  &--turquoise {
+    padding-top: 16px;
+    padding-bottom: 14px;
+    color: $turquoise;
+    background: transparent;
+    border: 2px solid $turquoise;
+    box-shadow: none;
+
+    &:hover {
+      color: $white;
+      background-color: $turquoise;
+    }
+  }
+
+  &--purple {
+    padding-top: 16px;
+    padding-bottom: 14px;
+    color: $purple;
+    background: transparent;
+    border: 2px solid $purple;
+    box-shadow: none;
+
+    &:hover {
+      color: $white;
+      background-color: $purple;
+    }
+  }
 }
