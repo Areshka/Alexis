@@ -1,0 +1,136 @@
+.pricing {
+  position: relative;
+  background-color: $bg-gray;
+  @include section-number("06");
+}
+
+.pricing__wrapper {
+  position: relative;
+  padding-top: 135px;
+  padding-bottom: 150px;
+}
+
+.pricing__header {
+  margin-bottom: 80px;
+}
+
+.pricing__table {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing__list {
+  max-width: 360px;
+  width: 31.57%;
+  padding: 33px 0 37px;
+  font: 400 15px/2.6 $font-family-base;
+  text-align: center;
+  background-color: $bg-white;
+  box-shadow: 0 0 20px rgba(0,0,0, .1);
+  border-top: 3px solid #000;
+  transition: box-shadow .3s;
+
+  &:hover {
+    box-shadow: 0 0 15px rgba(0,0,0, .4);
+  }
+
+  &--turquoise {
+    border-color: $turquoise;
+  }
+
+  &--orange {
+    border-color: $orange;
+  }
+
+  &--purple {
+    border-color: $purple;
+  }
+}
+
+.pricing__item {
+
+  &:last-child {
+    margin-top: 17px;
+  }
+
+  b {
+    color: $color-title;
+  }
+}
+
+.pricing__title {
+  margin-bottom: 28px;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 500;
+  color: $color-title;
+}
+
+.pricing__price {
+  width: 112px;
+  height: 112px;
+  margin: auto;
+  margin-bottom: 27px;
+  padding-top: 36px;
+  font-size: 25px;
+  line-height: 20px;
+  color: $white;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  &--turquoise {
+    background: radial-gradient($turquoise 0, $turquoise 50px, transparent 51px, transparent 53px, $turquoise 54px, $turquoise 56px);
+  }
+
+  &--orange {
+    background: radial-gradient($orange 0, $orange 50px, transparent 51px, transparent 53px, $orange 54px, $orange 56px);
+  }
+
+  &--purple {
+    background: radial-gradient($purple 0, $purple 50px, transparent 51px, transparent 53px, $purple 54px, $purple 56px);
+  }
+
+  small {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .pricing__wrapper {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .pricong__header {
+    margin-bottom: 50px;
+  }
+
+  .pricing__table {
+    flex-wrap: wrap;
+  }
+
+  .pricing__list {
+    max-width: 80%;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .pricing__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .pricing__list {
+    max-width: 100%;
+    width: 100%;
+  }
+}
