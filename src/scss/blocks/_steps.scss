@@ -1,0 +1,192 @@
+.steps {
+  position: relative;
+  background-color: $bg-white;
+  @include section-number("05");
+}
+
+.steps__wrapper {
+  position: relative;
+  padding-top: 135px;
+  padding-bottom: 150px;
+}
+
+.steps__header {
+  margin-bottom: 130px;
+}
+
+.steps__item {
+  width: 556px;
+  min-height: 300px;
+  margin: 0 auto;
+
+  &--first {
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, rgba($orange, 0.2) 100%),
+                $bg-white url($folder-raster + "step-1.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  &--second {
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, rgba($turquoise, 0.3) 100%),
+                $bg-white url($folder-raster + "step-2.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  &--third {
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, rgba($purple, 0.3) 100%),
+                $bg-white url($folder-raster + "step-3.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  &--four {
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, rgba($yellow, 0.2) 100%),
+                $bg-white url($folder-raster + "step-4.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.steps__info {
+  position: relative;
+  width: 458px;
+  margin-top: -50px;
+  padding: 45px 50px 70px 120px;
+  font: 400 15px/1.8em $font-family-base;
+  background-color: $bg-white;
+  border-bottom: 3px solid #000;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(0,0,0, .1);
+
+  &--left {
+    float: left;
+    margin-left: -293px;
+  }
+
+  &--right {
+    float: right;
+    margin-right: -293px;
+  }
+
+  &::before {
+    content: "01";
+    position: absolute;
+    top: 36px;
+    left: 40px;
+    font: 700 45px/1 $font-family-1;
+    color: #e0e0e0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 28px;
+    width: 115px;
+    height: 2px;
+    background-color: #e0e0e0;
+    transform: rotate(-50deg);
+  }
+
+  &--orange {
+    border-color: $orange;
+
+    &::before {
+      content: "01";
+    }
+  }
+
+  &--turquoise {
+    border-color: $turquoise;
+
+    &::before {
+      content: "02";
+    }
+  }
+
+  &--purple {
+    border-color: $purple;
+
+    &::before {
+      content: "03";
+    }
+  }
+
+  &--yellow {
+    border-color: $yellow;
+
+    &::before {
+      content: "04";
+    }
+  }
+}
+
+.steps__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: $color-title;
+}
+
+@media (max-width: 1200px) {
+
+  .steps__item {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .steps__info {
+    float: none;
+    margin-top: 0;
+
+    &--left {
+      margin-left: 0;
+    }
+
+    &--right {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .steps__wrapper {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+
+  .steps__header {
+    margin-bottom: 50px;
+  }
+
+  .steps__info {
+   padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .steps__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .steps__info {
+    width: 100%;
+    padding: 30px 30px 30px 90px;
+
+    &::before {
+      top: 20px;
+      left: 20px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .steps__text {
+    margin-left: -70px;
+  }
+}
