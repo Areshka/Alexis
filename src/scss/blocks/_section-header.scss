@@ -2,9 +2,14 @@
   text-align: center;
 
   &__title {
+    position: relative;
     margin-bottom: 15px;
     font: bold 50px/1.6 $font-family-1;
     color: $color-title;
+
+    &--light {
+      color: #fff;
+    }
   }
 
   &__subtitle {
