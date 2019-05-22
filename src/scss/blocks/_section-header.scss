@@ -1,15 +1,19 @@
 .section-header {
   text-align: center;
 
+  &--light {
+    color: $white;
+  }
+
+  &--light .section-header__title {
+    color: $white;
+  }
+
   &__title {
     position: relative;
     margin-bottom: 15px;
     font: bold 50px/1.6 $font-family-1;
     color: $color-title;
-
-    &--light {
-      color: #fff;
-    }
   }
 
   &__subtitle {
