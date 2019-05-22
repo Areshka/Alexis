@@ -1,0 +1,16 @@
+.testimonials {
+  background: linear-gradient(to top, rgba(#262732, .85), rgba(#262732, .85)),
+              $bg-purple url($folder-raster + "bg-testimonials.jpg") no-repeat top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.testimonials__wrapper {
+  position: relative;
+  padding-top: 135px;
+  padding-bottom: 150px;
+}
+
+.testimonials__header {
+  margin-bottom: 80px;
+}
