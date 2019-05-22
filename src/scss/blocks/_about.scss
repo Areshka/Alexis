@@ -30,17 +30,6 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 
-    &::before {
-      content: "01";
-      position: absolute;
-      top: -25px;
-      left: 0;
-      z-index: 0;
-      font-size: 276px;
-      color: rgba(#e0e0e0, .3);
-      font-weight: 700;
-    }
-
     &::after {
       content: "";
       position: absolute;
@@ -86,10 +75,6 @@
     &__content {
       width: 60%;
       padding: 60px 60px 70px;
-
-      &::before {
-        font-size: 250px;
-      }
     }
 
     &__title {
@@ -124,12 +109,6 @@
     &__content {
       width: 100%;
       padding: 50px 50px 60px;
-
-      &::before {
-        left: 50%;
-        margin-left: -90px;
-        font-size: 180px;
-      }
     }
   }
 }
@@ -143,11 +122,6 @@
 
     &__content {
       padding: 20px 20px 30px;
-
-      &::before {
-        margin-left: -70px;
-        font-size: 150px;
-      }
     }
   }
 }
