@@ -1,0 +1,33 @@
+.section-number {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  font: 700 276px/202px $font-family-base;
+  text-align: center;
+  color: rgba(#e0e0e0, .5);
+
+  &--one {
+    text-align: left;
+  }
+
+  &--seven {
+    opacity: .4;
+  }
+}
+
+@media (max-width: 960px) {
+
+  .section-number {
+    font-size: 250px;
+    line-height: 190px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .section-number {
+    font-size: 180px;
+    line-height: 130px;
+  }
+}
