@@ -1,7 +1,5 @@
 .services {
-  position: relative;
   background-color: #f7f7f7;
-  @include section-number("02");
 
   &__wrapper {
     position: relative;
@@ -109,7 +107,7 @@
 @media (max-width: 768px) {
 
   .services__wrapper {
-    padding-top: 70px;
+    padding-top: 85px;
     padding-bottom: 70px;
   }
 
@@ -123,11 +121,6 @@
 }
 
 @media (max-width: 576px) {
-
-  .services__wrapper {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
 
   .services__item {
     width: 100%;

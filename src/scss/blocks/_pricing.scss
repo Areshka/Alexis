@@ -1,7 +1,5 @@
 .pricing {
-  position: relative;
   background-color: $bg-gray;
-  @include section-number("06");
 }
 
 .pricing__wrapper {
@@ -98,7 +96,7 @@
 @media (max-width: 768px) {
 
   .pricing__wrapper {
-    padding-top: 70px;
+    padding-top: 85px;
     padding-bottom: 70px;
   }
 
@@ -122,12 +120,7 @@
   }
 }
 
-@media (max-width: 768px) {
-
-  .pricing__wrapper {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+@media (max-width: 576px) {
 
   .pricing__list {
     max-width: 100%;

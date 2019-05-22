@@ -1,7 +1,5 @@
 .steps {
-  position: relative;
   background-color: $bg-white;
-  @include section-number("05");
 }
 
 .steps__wrapper {
@@ -152,8 +150,8 @@
 @media (max-width: 768px) {
 
   .steps__wrapper {
-    padding-top: 70px;
-    padding-bottom: 40px;
+    padding-top: 85px;
+    padding-bottom: 70px;
   }
 
   .steps__header {
@@ -166,11 +164,6 @@
 }
 
 @media (max-width: 576px) {
-
-  .steps__wrapper {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
 
   .steps__info {
     width: 100%;

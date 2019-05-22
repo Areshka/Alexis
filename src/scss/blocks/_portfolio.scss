@@ -2,8 +2,6 @@
   position: relative;
   background-color: $bg-white;
 
-  @include section-number("03");
-
   &__wrapper {
     position: relative;
     padding-top: 135px;
@@ -82,8 +80,8 @@
 @media (max-width: 768px) {
 
   .portfolio__wrapper {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 85px;
+    padding-bottom: 40px;
   }
 
   .portfolio__header {
@@ -92,11 +90,6 @@
 }
 
 @media (max-width: 576px) {
-
-  .portfolio__wrapper {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
 
   .portfolio__item {
     width: 100%;

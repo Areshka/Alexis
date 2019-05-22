@@ -1,7 +1,5 @@
 .team {
-  position: relative;
   background-color: #f7f7f7;
-  @include section-number("04");
 
   &__wrapper {
     position: relative;
@@ -121,8 +119,8 @@
 @media (max-width: 768px) {
 
   .team__wrapper {
-    padding-top: 70px;
-    padding-bottom: 40px;
+    padding-top: 85px;
+    padding-bottom: 70px;
   }
 
   .team__header {
@@ -131,11 +129,6 @@
 }
 
 @media (max-width: 576px) {
-
-  .team__wrapper {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
 
   .team__member {
     max-width: 100%;
