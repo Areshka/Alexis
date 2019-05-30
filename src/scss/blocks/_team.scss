@@ -97,7 +97,7 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: $width-lg) {
 
   .team__members {
     flex-wrap: wrap;
@@ -116,7 +116,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: $width-md) {
 
   .team__wrapper {
     padding-top: 85px;
@@ -128,7 +128,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: $width-sm) {
 
   .team__member {
     max-width: 100%;

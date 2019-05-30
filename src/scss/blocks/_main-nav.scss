@@ -61,7 +61,7 @@
 }
 
 
-@media (max-width: 960px) {
+@media (max-width: $width-lg) {
   .main-nav__wrapper {
     position: relative;
     flex-direction: column;

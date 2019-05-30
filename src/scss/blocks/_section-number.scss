@@ -16,7 +16,7 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: $width-lg) {
 
   .section-number {
     font-size: 250px;
@@ -24,7 +24,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $width-md) {
 
   .section-number {
     font-size: 180px;

@@ -8,7 +8,7 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: $width-lg) {
 
   .video__bg {
     height: auto;

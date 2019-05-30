@@ -67,7 +67,7 @@
 
 
 
-@media (max-width: 960px) {
+@media (max-width: $width-lg) {
   .promo {
 
     &__slogan {
@@ -83,7 +83,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $width-md) {
   .promo {
     width: 100%;
 
@@ -112,7 +112,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: $width-sm) {
   .promo {
 
     &__slogan {

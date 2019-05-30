@@ -68,7 +68,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: $width-md) {
 
   .subscribe__inner {
     padding-top: 85px;
@@ -77,7 +77,7 @@
 
 }
 
-@media (max-width: 576px) {
+@media (max-width: $width-sm) {
 
   .subscribe__header {
     line-height: 1.3;

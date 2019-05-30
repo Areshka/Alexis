@@ -21,7 +21,7 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: $width-lg) {
 
   .section-header {
     &__title {
@@ -30,7 +30,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $width-md) {
 
   .section-header {
     &__title {

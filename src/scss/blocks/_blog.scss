@@ -22,7 +22,7 @@
   width: calc(1/2*100% - (1 - 1/2)*30px);
 }
 
-@media (max-width:768px) {
+@media (max-width:$width-md) {
 
   .blog__posts {
     flex-wrap: wrap;
@@ -33,7 +33,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $width-md) {
 
   .blog__inner {
     padding-top: 85px;

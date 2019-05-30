@@ -95,7 +95,7 @@
   font-weight: 500;
 }
 
-@media (max-width: 576px) {
+@media (max-width: $width-sm) {
 
   .stats__wrapper {
     padding-top: 50px;

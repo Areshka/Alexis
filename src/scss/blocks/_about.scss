@@ -60,7 +60,7 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: $width-lg) {
   .about {
     &__wrapper {
       padding-top: 150px;
@@ -90,7 +90,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $width-md) {
   .about {
     &__wrapper {
       padding-top: 70px;
@@ -113,7 +113,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: $width-sm) {
   .about {
     &__wrapper {
       padding-top: 50px;

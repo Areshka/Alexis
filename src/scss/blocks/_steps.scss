@@ -147,7 +147,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $width-md) {
 
   .steps__wrapper {
     padding-top: 85px;
@@ -163,7 +163,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: $width-sm) {
 
   .steps__info {
     width: 100%;

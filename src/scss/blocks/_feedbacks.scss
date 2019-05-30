@@ -146,7 +146,7 @@
 }
 
 
-@media (max-width: 1170px) {
+@media (max-width: $width-xl) {
 
   .feedbacks {
     padding-bottom: 30px;
@@ -174,7 +174,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: $width-sm) {
 
   .feedbacks__content {
     padding: 30px;
