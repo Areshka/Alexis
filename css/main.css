@@ -615,7 +615,7 @@ picture img {
       -ms-transform: translateY(28px) scaleX(1);
       transform: translateY(28px) scaleX(1); }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   .main-nav__wrapper {
     position: relative;
     -webkit-box-orient: vertical;
@@ -725,7 +725,7 @@ picture img {
   .logo--footer {
     font-size: 50px; }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   .logo {
     margin-bottom: 25px; } }
 
@@ -785,7 +785,7 @@ picture img {
     .promo__icon--check {
       fill: #feb960; }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   .promo__slogan {
     margin-bottom: 40px;
     font-size: 50px;
@@ -845,7 +845,7 @@ picture img {
   .section-header__subtitle {
     font: normal 18px/1 "Poppins", "Arial", sans-serif; }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   .section-header__title {
     font-size: 40px; } }
 
@@ -866,7 +866,7 @@ picture img {
   .section-number--seven {
     opacity: .4; }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   .section-number {
     font-size: 250px;
     line-height: 190px; } }
@@ -933,7 +933,7 @@ picture img {
   .about__text:last-child {
     margin-bottom: 0; }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   .about__wrapper {
     padding-top: 150px;
     padding-bottom: 150px; }
@@ -1039,7 +1039,7 @@ picture img {
     font-size: 15px;
     line-height: 25px; }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   .services__list {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap; }
@@ -1075,7 +1075,7 @@ picture img {
     width: 100%;
     outline: none; }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   .video__bg {
     height: auto; } }
 
@@ -1140,7 +1140,7 @@ picture img {
       background: -webkit-linear-gradient(left, #fc5f45 25%, #38c695 25%, #38c695 50%, #b27cf5 50%, #b27cf5 75%, #feb960 75%, #feb960 100%);
       background: linear-gradient(to right, #fc5f45 25%, #38c695 25%, #38c695 50%, #b27cf5 50%, #b27cf5 75%, #feb960 75%, #feb960 100%); }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   .portfolio__item {
     width: 45%; }
     .portfolio__item:nth-child(2n+2) {
@@ -1234,7 +1234,7 @@ picture img {
     font: 400 13px/1em "Poppins", "Arial", sans-serif;
     color: #616161; }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   .team__members {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap; }
@@ -1996,4 +1996,134 @@ picture img {
 
 @media (max-width: 768px) {
   .post--featured {
-    margin-bottom: 24px; } }
+    margin-bottom: 24px; }
+    .post--featured .post__info {
+      padding-left: 36px; }
+    .post--featured .post__content {
+      padding-left: 36px; } }
+
+@media (max-width: 576px) {
+  .post--featured .post__info {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .post--featured .post__content {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .post--regular {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
+@media (max-width: 380px) {
+  .post__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  .post__autor,
+  .post__date {
+    line-height: 25px; } }
+
+.subscribe {
+  background-color: #fff; }
+
+.subscribe__inner {
+  padding-top: 123px;
+  padding-bottom: 150px; }
+
+.subscribe__header {
+  margin-bottom: 27px;
+  font: 400 30px/2.5 "Poppins", "Arial", sans-serif;
+  color: #313131;
+  text-align: center; }
+
+.subscribe__form {
+  text-align: center;
+  font-size: 0; }
+
+.subscribe__email {
+  width: 300px;
+  height: 50px;
+  margin-top: -2px;
+  padding: 15px 28px;
+  font: 400 16px/1 "Poppins", "Arial", sans-serif;
+  color: #616161;
+  border: 2px solid #e2e2e2;
+  border-right-width: 0;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+  .subscribe__email:hover {
+    border-color: #c9c9c9; }
+  .subscribe__email:active, .subscribe__email:focus {
+    border-color: #fc492c; }
+  .subscribe__email:active:invalid, .subscribe__email:focus:invalid {
+    border-color: #b30000; }
+  .subscribe__email::-webkit-input-placeholder {
+    font: 400 16px/1 "Poppins", "Arial", sans-serif;
+    color: #616161;
+    opacity: 1;
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s; }
+  .subscribe__email::-moz-placeholder {
+    font: 400 16px/1 "Poppins", "Arial", sans-serif;
+    color: #616161;
+    opacity: 1;
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s; }
+  .subscribe__email:-ms-input-placeholder {
+    font: 400 16px/1 "Poppins", "Arial", sans-serif;
+    color: #616161;
+    opacity: 1;
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s; }
+  .subscribe__email::-ms-input-placeholder {
+    font: 400 16px/1 "Poppins", "Arial", sans-serif;
+    color: #616161;
+    opacity: 1;
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s; }
+  .subscribe__email::placeholder {
+    font: 400 16px/1 "Poppins", "Arial", sans-serif;
+    color: #616161;
+    opacity: 1;
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s; }
+  .subscribe__email:focus::-webkit-input-placeholder {
+    opacity: 0; }
+  .subscribe__email:focus::-moz-placeholder {
+    opacity: 0; }
+  .subscribe__email:focus:-ms-input-placeholder {
+    opacity: 0; }
+  .subscribe__email:focus::-ms-input-placeholder {
+    opacity: 0; }
+  .subscribe__email:focus::placeholder {
+    opacity: 0; }
+
+.subscribe__button {
+  box-shadow: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  vertical-align: bottom; }
+
+@media (max-width: 768px) {
+  .subscribe__inner {
+    padding-top: 85px;
+    padding-bottom: 70px; } }
+
+@media (max-width: 576px) {
+  .subscribe__header {
+    line-height: 1.3; }
+  .subscribe__email {
+    width: 270px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px; }
+  .subscribe__button {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px; } }
+
+@media (max-width: 520px) {
+  .subscribe__email {
+    margin-bottom: 25px; } }
