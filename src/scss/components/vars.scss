@@ -14,12 +14,18 @@ $turquoise: #38c695;
 $purple: #b27cf5;
 $purple--dark: #3f4049;
 $yellow: #feb960;
+
+// text
 $color-text: $gray;
 $color-title: $gray--dark;
 $color-nav: $gray--darken;
+
+// backgrounf
 $bg-white: $white;
 $bg-purple: $purple--dark;
 $bg-gray: #f7f7f7;
+
+// border
 $border-color: #e2e2e2;
 $border-color-hover: darken($border-color, 10);
 $border-color-active: darken($orange, 5);
@@ -31,3 +37,9 @@ $font--family-logo: 'Wisdom Script', 'Comic Sans', cursive;
 $font-family-1: 'Libre Baskerville', 'Georgia', serif;
 $font-family-2: 'Sacramento', 'Comic Sans', cursive;
 $font-size: 15px;
+
+// breakpoints
+$width-xl: 1170px;
+$width-lg: 992px;
+$width-md: 768px;
+$width-sm: 576px;
