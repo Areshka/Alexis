@@ -1,0 +1,26 @@
+.contacts {
+  background: $bg-purple url($folder-raster + "bg-contacts.jpg") no-repeat top center;
+  background-size: cover;
+
+  &__inner {
+    position: relative;
+    padding-top: 135px;
+    padding-bottom: 150px;
+  }
+
+  &__header {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: $width-md) {
+
+  .contacts__inner {
+    padding-top: 85px;
+    padding-bottom: 70px;
+  }
+
+  .contacts__header {
+    margin-bottom: 50px;
+  }
+}
