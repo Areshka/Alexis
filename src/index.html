@@ -809,13 +809,14 @@
         <!-- /.contacts__header -->
         <form class="form  contacts__form" action="#">
           <div class="form__box">
-            <input class="form__name" type="text" name="name">
-            <input class="form__email" type="email" name="email">
-            <input class="form__subject" type="text" name="subject">
-            <input class="form__budget" type="text" name="budget" placeholder="Project Budget">
+            <input class="form__input  form__input--name" type="text" name="name" placeholder="Your Name" required>
+            <input class="form__input  form__input--email" type="email" name="email" placeholder="Your Email" required>
+            <input class="form__input  form__input--subject" type="text" name="subject" placeholder="Subject" required>
+            <input class="form__input  form__input--budget" type="text" name="budget" placeholder="Project Budget" required>
           </div>
           <!-- /.form__box -->
-          <textarea name="message"cols="30" rows="10" placeholder="Your Message"></textarea>
+          <textarea class="form__textarea" name="message"cols="30" rows="10" placeholder="Your Message"></textarea>
+          <button class="button  form__button" type="submit">Send Message</button>
         </form>
       </div>
       <!-- /.contacts__inner container -->
