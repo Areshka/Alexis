@@ -15,11 +15,16 @@
 
   &--footer {
     font-size: 50px;
+    color: $white;
+
+    span {
+      color: $orange;
+    }
   }
 }
 
 @media (max-width: $width-lg) {
-  .logo {
+  .logo--header {
     margin-bottom: 25px;
   }
 }
