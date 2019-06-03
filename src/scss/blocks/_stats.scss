@@ -95,6 +95,13 @@
   font-weight: 500;
 }
 
+@media (max-width: $width-md) {
+  .stats {
+    background: linear-gradient(to top, rgba(#262732, .85), rgba(#262732, .85)),
+                $bg-purple url($folder-raster + "bg-statistics-mobile.jpg") no-repeat top;
+  }
+}
+
 @media (max-width: $width-sm) {
 
   .stats__wrapper {

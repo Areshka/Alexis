@@ -16,6 +16,10 @@
 }
 
 @media (max-width: $width-md) {
+  .testimonials {
+    background: linear-gradient(to top, rgba(#262732, .85), rgba(#262732, .85)),
+                $bg-purple url($folder-raster + "bg-testimonials-mobile.jpg") no-repeat top;
+  }
 
   .testimonials__wrapper {
     padding-top: 85px;

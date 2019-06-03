@@ -11,4 +11,12 @@
   background-size: cover;
 }
 
+@media (max-width: $width-md) {
+
+  .main-header {
+    background: linear-gradient(rgba($black, .75), rgba($black, .8)),
+              $bg-purple url($folder-raster + "bg-header-mobile.jpg") no-repeat center center;
+  }
+}
+
 

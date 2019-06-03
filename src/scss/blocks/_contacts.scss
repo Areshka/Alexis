@@ -15,6 +15,11 @@
 
 @media (max-width: $width-md) {
 
+  .contacts {
+    background: $bg-purple url($folder-raster + "bg-contacts-mobile.jpg") no-repeat top center;
+    background-size: cover;
+  }
+
   .contacts__inner {
     padding-top: 85px;
     padding-bottom: 70px;
