@@ -560,6 +560,12 @@ picture img {
   background-attachment: fixed;
   background-size: cover; }
 
+@media (max-width: 768px) {
+  .main-header {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.8))), #3f4049 url("../img/raster/bg-header-mobile.jpg") no-repeat center center;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), #3f4049 url("../img/raster/bg-header-mobile.jpg") no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), #3f4049 url("../img/raster/bg-header-mobile.jpg") no-repeat center center; } }
+
 .main-nav {
   position: fixed;
   z-index: 999;
@@ -1353,6 +1359,12 @@ picture img {
   font-size: 20px;
   font-weight: 500; }
 
+@media (max-width: 768px) {
+  .stats {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(38, 39, 50, 0.85)), to(rgba(38, 39, 50, 0.85))), #3f4049 url("../img/raster/bg-statistics-mobile.jpg") no-repeat top;
+    background: -webkit-linear-gradient(bottom, rgba(38, 39, 50, 0.85), rgba(38, 39, 50, 0.85)), #3f4049 url("../img/raster/bg-statistics-mobile.jpg") no-repeat top;
+    background: linear-gradient(to top, rgba(38, 39, 50, 0.85), rgba(38, 39, 50, 0.85)), #3f4049 url("../img/raster/bg-statistics-mobile.jpg") no-repeat top; } }
+
 @media (max-width: 576px) {
   .stats__wrapper {
     padding-top: 50px;
@@ -1621,6 +1633,10 @@ picture img {
   margin-bottom: 80px; }
 
 @media (max-width: 768px) {
+  .testimonials {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(38, 39, 50, 0.85)), to(rgba(38, 39, 50, 0.85))), #3f4049 url("../img/raster/bg-testimonials-mobile.jpg") no-repeat top;
+    background: -webkit-linear-gradient(bottom, rgba(38, 39, 50, 0.85), rgba(38, 39, 50, 0.85)), #3f4049 url("../img/raster/bg-testimonials-mobile.jpg") no-repeat top;
+    background: linear-gradient(to top, rgba(38, 39, 50, 0.85), rgba(38, 39, 50, 0.85)), #3f4049 url("../img/raster/bg-testimonials-mobile.jpg") no-repeat top; }
   .testimonials__wrapper {
     padding-top: 85px;
     padding-bottom: 70px; }
@@ -2145,6 +2161,9 @@ picture img {
     margin-bottom: 80px; }
 
 @media (max-width: 768px) {
+  .contacts {
+    background: #3f4049 url("../img/raster/bg-contacts-mobile.jpg") no-repeat top center;
+    background-size: cover; }
   .contacts__inner {
     padding-top: 85px;
     padding-bottom: 70px; }
