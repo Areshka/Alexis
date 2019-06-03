@@ -407,43 +407,50 @@ template {
   font-family: "Wisdom Script";
   src: url("../fonts/Wisdom-Script/Wisdom-Script.woff") format("woff"), url("../fonts/Wisdom-Script/Wisdom-Script.woff2") format("woff2"), url("../fonts/Wisdom-Script/Wisdom-Script.ttf") format("truetype");
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: auto; }
 
 @font-face {
   font-family: "Sacramento";
   src: url("../fonts/Sacramento/Sacramento-Regular.woff") format("woff"), url("../fonts/Sacramento/Sacramento-Regular.woff2") format("woff2"), url("../fonts/Sacramento/Sacramento-Regular.ttf") format("truetype");
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: auto; }
 
 @font-face {
   font-family: "Libre Baskerville";
   src: url("../fonts/Libre-Baskerville/LibreBaskerville-Regular.woff") format("woff"), url("../fonts/Libre-Baskerville/LibreBaskerville-Regular.woff2") format("woff2"), url("../fonts/Libre-Baskerville/LibreBaskerville-Regular.ttf") format("truetype");
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: auto; }
 
 @font-face {
   font-family: "Libre Baskerville";
   src: url("../fonts/Libre-Baskerville/LibreBaskerville-Bold.woff") format("woff"), url("../fonts/Libre-Baskerville/LibreBaskerville-Bold.woff2") format("woff2"), url("../fonts/Libre-Baskerville/LibreBaskerville-Bold.ttf") format("truetype");
   font-style: normal;
-  font-weight: 700; }
+  font-weight: 700;
+  font-display: auto; }
 
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: auto; }
 
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins/Poppins-Medium.woff") format("woff"), url("../fonts/Poppins/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Medium.ttf") format("truetype");
   font-style: normal;
-  font-weight: 500; }
+  font-weight: 500;
+  font-display: auto; }
 
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins/Poppins-SemiBold.woff") format("woff"), url("../fonts/Poppins/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
   font-style: normal;
-  font-weight: 600; }
+  font-weight: 600;
+  font-display: auto; }
 
 body {
   margin: 0;
