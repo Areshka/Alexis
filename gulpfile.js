@@ -84,7 +84,8 @@ function styles() {
 const jsFiles = [
   path.scripts.src + 'picturefill.js',
   path.scripts.src + 'menu.js',
-  path.scripts.src + 'main.js'
+  path.scripts.src + 'main.js',
+  path.scripts.src + 'scrollSpy.js'
 ];
 
 // сборка скриптов
