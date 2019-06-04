@@ -2018,11 +2018,12 @@ picture img {
 .post__link {
   display: inline-block;
   margin-bottom: 8px;
-  font-size: 18px;
-  line-height: 35px;
-  font-weight: 500;
   text-decoration: none;
   color: #313131; }
+  .post__link h5 {
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 500; }
   .post__link:hover {
     text-decoration: underline; }
 
