@@ -460,6 +460,9 @@ body {
   color: #616161;
   background-color: #fff; }
 
+.section {
+  overflow: hidden; }
+
 *::-moz-selection {
   background-color: #fc5f45;
   color: #000; }
