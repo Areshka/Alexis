@@ -7,6 +7,10 @@ body {
   background-color: $bg-white;
 }
 
+.section {
+  overflow: hidden;
+}
+
 *::selection {
   background-color: $orange;
   color: $black;
