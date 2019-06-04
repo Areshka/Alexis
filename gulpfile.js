@@ -8,7 +8,8 @@ var path = {
   styles: {
     src: 'src/scss/main.scss',
     build: 'build/css/',
-    watch: 'src/scss/**/*.scss'
+    watch: 'src/scss/**/*.scss',
+    css: 'src/css/**/*.css'
   },
   scripts: {
     src: 'src/js/',
@@ -83,6 +84,7 @@ function styles() {
 
 const jsFiles = [
   path.scripts.src + 'picturefill.js',
+  path.scripts.src + 'aos.js',
   path.scripts.src + 'menu.js',
   path.scripts.src + 'main.js',
   path.scripts.src + 'scrollSpy.js'
@@ -166,7 +168,8 @@ function watch() {
 function copy() {
   return gulp.src([
       path.fonts.src,
-      path.video
+      path.video,
+      path.styles.css
     ], {
       base: "src"
     })
