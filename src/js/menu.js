@@ -1,3 +1,6 @@
+/* ===============================
+            MENU
+================================== */
 (function () {
   var mainNav = document.querySelector('.main-nav');
   var toggle = document.querySelector('.main-nav__toggle');
@@ -11,3 +14,6 @@
     }
   });
 })();
+/* ===============================
+          END MENU
+================================== */
