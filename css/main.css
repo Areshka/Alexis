@@ -2057,7 +2057,8 @@ picture img {
     line-height: 25px; } }
 
 .subscribe {
-  background-color: #fff; }
+  background-color: #fff;
+  overflow: hidden; }
 
 .subscribe__inner {
   padding-top: 123px;
